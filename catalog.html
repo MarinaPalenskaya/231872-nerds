@@ -6,67 +6,89 @@
 	</head>
 	<body>
 		 <header>
-		 <div class="main-menu">
+		 	<div class="main-menu">
 				<div class="index-logo">
 					<img src="logo.png"  alt="логотип">
 				</div>
 				<nav class="main-navigation">
-						<ul>
-							<li>
-								<a href="#">Студия</a>
-							</li>
-							<li>
-								<a href="#">Клиенты</a>
-							</li>
-							<li>
-								<a href="#">Магазин</a>
-							</li>
-							<li>
-								<a href="#">Контакты</a>
-							</li>
-						</ul>
+					<ul>
+						<li>
+							<a href="#">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li>
+							<a href="#">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
 				</nav>
 				<div class="user-block">
 						<a href="#">Корзина</a>
 				</div>
-	     </div>
+			</div>
 			<div class="welcome">
 				<h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
 			</div>
 		 </header>
 		 <main>
 		 	<div class="left-column">
-		 		<div class="val">
-		 			<h2>стоимость:</h2>
+				<form action="#" method="post">
+		 			<div class="val">
+		 				<h2>стоимость:</h2>
 <!--		 			скролл-поле  не знаю как делать-->
-	 				от		
-	 				<input type="text" name="min"  value="0">
-	 				до
-	 				<input type="text" name="min"  value="15000">
-		 		</div>
-		 		<div class="grid">
-		 			<h2>сетка:</h2>
-		 			<label>
-		 				<input type="radio" name="grid-one"  value="adaptive" checked><br>
-    					<input type="radio" name="grid-two"  value="fixed"><br>
-    					<input type="radio" name="grid-three"  value="rubber"><br>
-		 			</label>
-		 		</div>
-		 		<div class="features">
-					<h2>особенности:</h2>
-					<input type="checkbox"  name="slider" checked> Слайдер<br>
-					<input type="checkbox"  name="advantages"> Блок преимуществ<br>
-		 			<input type="checkbox"  name="news" checked>Новости
-		 			<input type="checkbox"  name="gallery"> Галерея
-		 			<input type="checkbox"  name="basket">Корзина
-		 		</div>
-		 		<div class="left-column-button">
-		 			<input type="show" value="показать"
-		 		</div>
+	 					<span>от</span>	
+	 					<input type="text" name="min"  value="0">
+	 					<span>до</span>
+	 					<input type="text" name="min"  value="15000">
+		 			</div>
+		 			<div class="grid">
+		 				<h2>сетка:</h2>
+						<div class="inp-box">
+							<input id="grid-selection" type="radio" name="grid" checked>
+							<label for="grid-selection">Адаптивная</label>
+						</div>
+						<div class="inp-box">
+							<input id="grid-selection2" type="radio" name="grid">
+							<label for="grid-selection2">Фиксированная</label>
+						</div>
+						<div class="inp-box">
+							<input id="grid-selection3" type="radio" name="grid">
+							<label for="grid-selection3">Резиновая</label>
+						</div>
+					</div>
+		 			<div class="features">
+						<h2>особенности:</h2>
+						<div class="inp-box2">
+							<input id="features-selection" type="checkbox" name="features" checked>
+							<label for="features-selection"> Слайдер</label>
+						</div>
+						<div class="inp-box2">
+							<input id="features-selection2" type="checkbox" name="features">
+							<label for="features-selection2"> Блок преимуществ</label>
+						</div>
+						<div class="inp-box2">
+							<input id="features-selection3" type="checkbox" name="features" checked>
+							<label for="features-selection3">Новости</label>
+						</div>
+						<div class="inp-box2">
+							<input id="features-selection4" type="checkbox" name="features">
+							<label for="features-selection4">Галерея</label>
+						</div>
+						<div class="inp-box2">
+							<input id="features-selection5" type="checkbox" name="features">
+							<label for="features-selection5">Корзина</label>
+						</div>
+		 			</div>
+					<button type="submit">показать</button>
+		 		</form>
 		 	</div>
 		 	<div class="right-column">
 		 		<div class="sorting">
-		 			Сортировать:
+		 			<span>Сортировать:</span>
 		 			<nav class="navigation-sorting">
 						<ul>
 							<li>
@@ -90,35 +112,65 @@
 					</div>
 		 		</div>
 		 		<div class="portfolio">
-		 			<div class="dots">
-		 				<a href="#"><img src="aviator.png"></a>
+		 			<div class="item">
+						<div class="dots">
+<!--						не пойму я задумку дизайнера - что это за точки, какова их функция. Это статичная декоративная картика, или это переключатели между стриницами сайтов 	-->
+						</div>
+						<div class="image1">
+		 					<a href="#"><img src="aviator.png" alt="aviator"></a>
+						</div>
 		 			</div>
-		 			<div class="dots-dark">
-		 				<a href="#"><img src="sunset.png"></a>
+					<div class="item">
+						<div class="dots">
+
+						</div>
+						<div class="image2">
+		 					<a href="#"><img src="sunset.png" alt="sunset"></a>
+						</div>
 		 			</div>
-		 			<div class="dots">
-		 				<a href="#"><img src="forte.png"></a>
+					<div class="item">
+						<div class="dots">
+
+						</div>
+						<div class="image3">
+		 					<a href="#"><img src="forte.png" alt="forte"></a>
+						</div>
 		 			</div>
-		 			<div class="dots">
-		 				<a href="#"><img src="modern original thai.png"></a>
+					<div class="item">
+						<div class="dots">
+
+						</div>
+						<div class="image4">
+		 					<a href="#"><img src="modern-original-thai.png" alt="modern-original-thai"></a>
+						</div>
 		 			</div>
-		 			<div class="dots">
-		 				<a href="#"><img src="avenue.png"></a>
+					<div class="item">
+						<div class="dots">
+
+						</div>
+						<div class="image5">
+		 					<a href="#"><img src="avenue.png" alt="avenue"></a>
+						</div>
 		 			</div>
-		 			<div class="dots">
-		 				<a href="#"><img src="dovetait.png"></a>
+					<div class="item">
+						<div class="dots">
+
+						</div>
+						<div class="image5">
+		 					<a href="#"><img src="dovetait.png" alt="dovetaitr"></a>
+						</div>
 		 			</div>
 		 		</div>
 		 		<div class="page-navigator">
-		 			<input type="number" value="1" checked>
-		 			<input type="number" value="2" >
-		 			<input type="number" value="3">
-		 			<input type="number" value="следующая" >
-		 		</div>
+					<a href="#1">1</a>
+					<a href="#2">2</a>
+					<a href="#3">3</a>
+					<a class="next" href="#1">Следующая</a>
+			 	</div>
 		 	</div>
 		 	<div class="footer-guide">
 				<img src="#"  alt="гид">
-					<div class="footer-contcts">
+					<div class="footer-contacts">
 						<h3>NЁRDS DESIGN STUDIO</h3>
 						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p>тел. +7 (812) 275-75-75</p>

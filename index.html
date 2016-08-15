@@ -4,14 +4,13 @@
         <meta charset="utf-8">
     	<title>HTML Academy: Нёрдс</title>
   	</head>
- 	 <body>
+    <body>  
 		<header>
-			<div class="main-menu">
+			<div class="main-menu ">
 				<div class="index-logo">
 					<img src="logo.png"  alt="логотип">
 				</div>
-				<div class="menu" >
-					<nav class="main-navigation">
+				<nav class="main-navigation">
 						<ul>
 							<li>
 								<a href="#">Студия</a>
@@ -26,41 +25,40 @@
 								<a href="#">Контакты</a>
 							</li>
 						</ul>
-					</nav>
-				</div>
+				</nav>
 				<div class="user-block">
 					<a href="#">Корзина</a>
 				</div>
 			</div>
-			<section class="advantages">
-				<h1>Долго, дорого, скрупулезно.</h1>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-				<a class="advantages-button" href="#">Узнать больше</a>
-			</section>
-			<div class="right-block">
-				<img src="1.png" alt="девайсы">
-			</div>
-			<div class="slider">
-				<input type="radio" name="page1" checked>
-				<input type="radio" name="page2" checked>
-				<input type="radio" name="page3" checked>
+            <div class="slider">
+			     <section class="advantages">
+				    <h1>Долго, дорого, скрупулезно.</h1>
+				    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+				    <a class="advantages-button" href="#">Узнать больше</a>
+			     </section>
+			     <div class="right-block">
+					<img src="1.png" alt="девайсы">
+				 </div>
+				 <input type="radio" name="page1" checked>
+			  	 <input type="radio" name="page2">
+				 <input type="radio" name="page3" >
 			</div>
 		</header>
 		<main >
 			<div class="performance">
-				<div class="site">
+				<div class="block">
 					<img src="performance-site.png" alt="монитор">
 					<h2>веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 					<a class="red" href="#">Заказать</a>
 				</div>
-				<div class="mobile-app">
+				<div class="block">
 					<img src="devices.png" alt="смартфоны">
 					<h2>приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a class="green" href="#">Заказать</a>
 				</div>
-				<div class="presentations">
+				<div class="block">
 					<img src="screen.png" alt="экран">
 					<h2>презентации</h2>
 					<p>Вы даже не подозреваете, насколько  вы изумительны</p>
@@ -68,48 +66,51 @@
 				</div>
 			</div>
 			<div class="index-content">
-				<div class="left-top">
-					<b>Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
-					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+				<div class="left">
+					<div class="left-top">
+						<b>Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
+						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+					</div>
+					<div class="left-bottom">
+						<h3> выполняем заказы на разработку</h3>
+						<ul class="dash">
+							<li>Веб-сайтов любой сложности</li>
+							<li>Мобильных приложений для iOS и Android</li>
+							<li>Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+					</div>
 				</div>
-				<div class="left-bottom">
-					<h3> выполняем заказы на разработку</h3>
-					<ul class="dash">
-						<li>Веб-сайтов любой сложности</li>
-						<li>Мобильных приложений для iOS и Android</li>
-						<li>Слайдшоу и видео для корпоративных презентаций</li>
-					</ul>
-				</div>
-				<div class="right-top">
-					<img src="logo.png"  alt="логотип">				
-					<p>since 2004</p>	
-				</div>
-				<div class="right-bottom">
-					<p>как мы работаем:</p>
-					<ul class="dash">
-						<li>С самоотдачей 146%</li>
-						<li>Соблюдая сроки на 100%</li>
-						<li>По предоплате 50%</li>
-					</ul>
+				<div class="right">
+					<div class="right-top">
+						<img src="logo.png"  alt="логотип">				
+						<p>since 2004</p>	
+					</div>
+					<div class="right-bottom">
+						<p>как мы работаем:</p>
+						<ul class="dash">
+							<li>С самоотдачей 146%</li>
+							<li>Соблюдая сроки на 100%</li>
+							<li>По предоплате 50%</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="logos">
-				<img  src="#" alt="логотип Глуханко">
-				<img  src="#" alt="логотип HTML-академия">	
-				<img  src="#" alt="логотип Бородинский">
-<!--				Есть подозрение , что эти логотипы можно вставить с помощью CSS  -->
+				<a href="#"><img  src="#" alt="логотип Глуханко"></a>
+				<a href="#"><img  src="#" alt="логотип HTML-академия">	</a>
+				<a href="#"><img  src="#" alt="логотип Бородинский"></a>
 			</div>
-		</main>
-		<footer>
 			<div class="footer-guide">
 				<img src="#"  alt="гид">
-					<div class="footer-contcts">
+					<div class="footer-contacts">
 						<h3>NЁRDS DESIGN STUDIO</h3>
 						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p>тел. +7 (812) 275-75-75</p>
 						<a class="footer-letter" href="#">НАПИШИТЕ НАМ</a>
  					</div>
 			</div>
+		</main>
+		<footer>
 			<div class="footer-social">
 				<a class="social-btn  social-btn-vk" href="#">В контакте</a>
 				<a class="social-btn  social-btn-fb" href="#">Фейсбук</a>
@@ -120,7 +121,7 @@
 				<p>Скидка 10% для друзей из социальных сетей</p>
 			</div>
 		</footer>	
- 	 </body>
+    </body>
 </html>
     
 
