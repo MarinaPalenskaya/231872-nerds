@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-    width: 880px;
+    width: 900px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -90,27 +90,35 @@ b {
     width: 100px;
     color: #000000;
     margin-top: 53px;
+	margin-right: 20px;
     position: relative;
 }
 
-.user-block a {
-    padding-left: 28px;
-    margin-left: 7px;
-    color: #3f3f3f;
-	background: #eeeeee url(../img/sprite.png) no-repeat -322px -5px;
+.user-block .icon-basket,
+.user-block .basket  {
+    display: inline-block;
 }
 
-.user-block .basket {
-    position: absolute;
-    right: 79px;
-    bottom: 8px;
-/*    background: #eeeeee url(../img/sprite.png) no-repeat -322px -5px;*/
+.user-block .icon-basket {
+    width: 16px;
+    height: 15px;
+	margin-right: 8px;
+    display: inline-block;
+    background: url(../img/sprite.png) no-repeat -124px -5px;
+}
+
+.user-block:hover .icon-basket {
+	background: url(../img/sprite.png) no-repeat -156px -5px;
+}
+
+.user-block:active .icon-basket {
+	background: url(../img/sprite.png) no-repeat -140px -5px;
 }
 
 .main-navigation {
     float: right;
     margin-top: 53px;
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 0px;
 }
 
@@ -132,7 +140,7 @@ b {
     color: #fb565a;
 }
 
-.main-menu a:focus {
+.main-menu .active {
     color: #000;
     border-bottom: 2px solid #fb565a;
     padding-bottom: 5px;
@@ -154,7 +162,7 @@ b {
     display: none;
 }
 
-.slider .slide:nth-child(3 ) {
+.slider .slide:nth-child(3) {
     display: none;
 }
 
@@ -192,10 +200,15 @@ b {
     padding-top: 3px;
 }
 
+.right-block img {
+    margin-top: -20px;
+}
+
 .slider-indicator {
     position: absolute;
     left: 50%;
-    margin-left: -31px;
+    margin-left: -56px;
+	top: 50
     bottom: 23px;
     font-size: 0;
 }
@@ -420,13 +433,47 @@ b {
     margin-top: -1px;
 }
 
-
 /*brands*/
+.brands {
+    margin-top: 8px;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    height: 165px;
+    align-items: center;
+}
 
 .brands a {
-    float: left;
-    height: 165px;
-    line-height: 165px;
+    display: block;
+}
+
+.brands .gluh {
+    width: 198px;
+    height: 37px;
+    background: url(../img/index/gluh.png) no-repeat;
+}
+
+.brands .gluh:hover {
+    background-image: url(../img/index/gluh-hover.png);
+}
+
+.brands .html {
+    width: 199px;
+    height: 68px;
+    background: url(../img/index/html.png) no-repeat;
+}
+
+.brands .html:hover {
+    background-image: url(../img/index/html-hover.png);
+}
+
+.brands .borod {
+    width: 209px;
+    height: 86px;
+    background: url(../img/index/borod.png) no-repeat;
+}
+
+.brands .borod:hover {
+    background-image: url(../img/index/borod-hover.png);
 }
 
 .brands a:first-child {
@@ -435,37 +482,8 @@ b {
     margin-right: 122px;
 }
 
-.brands a:first-child img {
-    display: inline-block;
-    margin: 4px 0 0 0;
-}
-
 .brands a:nth-child(2) {
-    width: 199px;
     margin-right: 115px;
-}
-
-.brands a:nth-child(2) img {
-    display: inline-block;
-    margin: 13px 0 0 0;
-}
-
-.brands a:nth-child(2) {
-    width: 207px;
-}
-
-.brands a:nth-child(3) img {
-    display: inline-block;
-    margin: 10px 0 0 0;
-}
-
-.brands img {
-    vertical-align: middle;
-}
-
-.brands {
-	margin-top: 8px;
-    border-bottom: 1px solid #eeeeee;
 }
 
 .guide {
@@ -540,7 +558,7 @@ form .close {
     position: absolute;
     right: 6px;
     top: 6px;
-    background: #fb565a url(../img/sprite.png) no-repeat -283px -36px;
+    background: #fb565a url(../img/sprite.png) no-repeat -230px  4px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -553,7 +571,7 @@ form .close {
     display: inline-block;
 }
 
-#name-field {
+.name-field {
     width: 200px;
     height: 33px;
     border: 2px solid #ebedef;
@@ -566,19 +584,11 @@ form .close {
     padding-left: 15px;
 }
 
-#name-field:hover {
-    border: 2px solid #a2a9ac;
-}
-
-#name-field:active {
-    border: 2px solid #56bffb;
-}
-
 .email {
     display: inline-block;
 }
 
-#email-field {
+.email-field {
     display: inline-block;
     width: 203px;
     height: 33px;
@@ -591,21 +601,13 @@ form .close {
     line-height: 18px;
 }
 
-#email-field:hover {
-    border: 2px solid #a2a9ac;
-}
-
-#email-field:active {
-    border: 2px solid #56bffb;
-}
-
 .infofmation {
     margin-top: 20px;
 }
 
-/*
-.infofmation label, .infofmation textarea {
-    display: inline-block;                                                       !!!
+.infofmation label,
+.infofmation textarea {
+    display: inline-block;
 }
 
 .infofmation textarea {
@@ -621,9 +623,8 @@ form .close {
     display: block;
     margin: 7px 0 48px;
 }
-*/
 
-#infofmation-field {
+.infofmation-field {
     display: inline-block;
     width: 445px;
     height: 108px;
@@ -635,14 +636,6 @@ form .close {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
-}
-
-#infofmation-field:hover {
-    border: 2px solid #a2a9ac;
-}
-
-#infofmation-field:active {
-    border: 2px solid #56bffb;
 }
 
 .submit {
@@ -657,6 +650,16 @@ form .close {
     font-size: 12px;
     border: 1px solid #fb565a;
     border-radius: 3px;
+}
+
+.form div input:hover,
+.form div textarea:hover {
+    border: 2px solid #a2a9ac;
+}
+
+.form div input:focus,
+.form div textarea:focus {
+    border: 2px solid #56bffb;
 }
 
 footer {
@@ -737,18 +740,72 @@ footer {
     position: relative;
 }
 
-.scroll-field .ring {
+.scroll-field .ring1 {
     display: inline-block;
-    width: 19px;
-    height: 19px;
-    background: yellow;
+    width: 20px;
+    height: 20px;
+    background: white;
     border: 1px solid #fff;
     border-radius: 50%;
-    box-shadow: inset 0 3px 0 #cfcfcf;
+    box-shadow: 0 3px 0 #cfcfcf;
     position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
+    left: 15;
+    top: 35;
+}
+
+.scroll-field .ring1:after {
+	display: block;
+    width: 4px;
+    height: 4px;
+    background: #d7dcde;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	margin:-6px 0 0 -6px;
+	content: "";
+}
+
+.scroll-field .green-line {
+	border: 2px solid #00ca74;
+	width: 120px;
+	position: absolute;
+	left: 40px;
+	top: 37px;
+}
+
+.scroll-field .ring2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 0 #cfcfcf;
+    position: absolute;
+    left: 60;
+    top: 35;
+}
+
+.scroll-field .ring2:after {
+	display: block;
+    width: 4px;
+    height: 4px;
+    background: #d7dcde;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	margin:-6px 0 0 -6px;
+	content: "";
+}
+
+.scroll-field .gray-line {
+	border: 2px solid #d7dcde;
+	width: 40px;
+	position: absolute;
+	left: 185px;
+	top: 37px;
 }
 
 #min {
@@ -776,9 +833,10 @@ footer {
 }
 
 .scroll-field span {
+	display: inline-block;
     font-size: 18px;
     line-height: 30px;
-	padding-left: 10px;
+    padding-left: 10px;
     text-transform: uppercase;
 }
 
@@ -798,10 +856,10 @@ footer {
 }
 
 .grid .inp-box label {
-    cursor: pointer;                                            /*курсор-рука*/
+    cursor: pointer;
 }
 
-.grid .inp-box label:before {                                 /*окружности*/
+.grid .inp-box label:before {
     position: absolute;
     left: 0;
     top: 4px;
@@ -813,11 +871,11 @@ footer {
     display: block;
 }
 
-.grid .inp-box input:checked + label:after {               /*   точки в окружностях*/
+.grid .inp-box input:checked + label:after {
     display: block;
     content: "";
     width: 9px;
-    height:9px;
+    height: 9px;
     background: #c1c1c1;
     border-radius: 50%;
     position: absolute;
@@ -825,7 +883,7 @@ footer {
     top: 11px;
 }
 
-#grid-selection {                                                    /*???*/
+#grid-selection {
     display: inline-block;
     background: #c1c1c1;
     border-radius: 20%;
@@ -844,7 +902,7 @@ footer {
     line-height: 30px;
     margin-top: 10px;
     padding: 0 0 0 35px;
-	position: relative;
+    position: relative;
 }
 
 .features .inp-box2 input {
@@ -852,10 +910,10 @@ footer {
 }
 
 .features .inp-box2 label {
-    cursor: pointer;                                            /*курсор-рука*/
+    cursor: pointer;
 }
 
-.features .inp-box2 label:before {                                 /*боксы*/
+.features .inp-box2 label:before {  
     position: absolute;
     left: 0;
     top: 4px;
@@ -867,11 +925,16 @@ footer {
     display: block;
 }
 
-
-
-
-
-
+.features .inp-box2 input:checked + label:after {
+	display: block;
+    content: "";
+    width: 23px;
+    height: 17px;
+	background: url(../img/sprite.png) no-repeat -100px -5px;
+	position: absolute;
+    left: 4px;
+    top: 6px;
+}
 
 .show {
     display: inline-block;
@@ -898,6 +961,7 @@ footer {
     width: 560px;
     height: 1150px;
     margin-top: 74px;
+	margin-right: 30px;
 }
 
 .sorting {
@@ -922,13 +986,14 @@ footer {
     display: inline-block;
     margin-left: 62px;
 }
+
 .navigation-sorting li {
     display: inline-block;
-	font-size: 0;
+    font-size: 0;
 }
 
 .navigation-sorting a {
-	display: inline-block;
+    display: inline-block;
     font-size: 12px;
     margin-right: 40px;
     color: #c7c7c7;
@@ -957,22 +1022,28 @@ footer {
     border-bottom: 12px solid #c1c1c1;
 }
 
-/*
-.button-down:active {
-    border-bottom: 12px solid #000;
+.button-down:hover {
+    border-top: 12px solid #c1c1c1;
 }
-*/
+
+.button-up:hover {
+    border-bottom: 12px solid #c1c1c1;
+}
+
+.button-down:focus {
+    border-top: 12px solid #00ca74;
+}
+
+.button-up:focus {
+    border-bottom: 12px solid #00ca74;
+}
 
 .button-up:active {
     border-bottom: 12px solid #000;
 }
 
-.button-down:focus {
-    border-bottom: 12px solid #00ca74;
-}
-
-.button-up:focus {
-    border-bottom: 12px solid #00ca74;
+.button-down:active {
+    border-top: 12px solid #000;
 }
 
 .portfolio {
@@ -997,7 +1068,7 @@ footer {
     border-radius: 5px 5px 0 0;
 }
 
-.item .dots:hover {
+.item:hover .dots {
     background: #797979;
 }
 
@@ -1063,8 +1134,8 @@ footer {
     background: #fb565a;
     border: 1px solid #fb565a;
     text-align: center;
-	vertical-align: middle;
-    margin: 0 auto;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 .price button:hover {
@@ -1098,16 +1169,13 @@ footer {
 
 .page-navigator a:hover {
     background: #e5e5e5;
-    border: 2px solid #e5e5e5;
 }
 
 .page-navigator a:active {
     background: #d5d5d5;
-    border: 2px solid #d5d5d5;
-	box-shadow: inset 0 3px 0 #b5b5b5;
+    box-shadow: inset 0 3px 0 #b5b5b5;
 }
 
 .page-navigator a:focus {
     background: #fff;
-    border: 2px solid #f2f2f2;
 }

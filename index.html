@@ -15,20 +15,20 @@
             <div class="index-logo">
                 <img src="img/Index/logo.png" width="139" height="59" alt="логотип">
             </div>
-            <div class="user-block ">
-                <img class="basket" src="img/index/basket.png" width="15" height="15" alt="корзина">
-                <a href="#">корзина</a>
-            </div>
+            <a  href="#" class="user-block">
+					<span class="icon-basket"></span>
+					<div class="basket">корзина</div>
+			</a>
             <nav class="main-navigation">
                 <ul>
                     <li>
-                        <a href="#">студия</a>
+                        <a class="active" href="/">студия</a>
                     </li>
                     <li>
                         <a href="#">клиенты</a>
                     </li>
                     <li>
-                        <a href="#">магазин</a>
+                        <a href="catalog.html">магазин</a>
                     </li>
                     <li>
                         <a href="#">контакты</a>
@@ -125,9 +125,9 @@
             </div>
         </div>
         <div class="wrapper brands clearfix">
-            <a href="#"><img src="img/index/gluh.png" alt="логотип Глуханко"></a>
-            <a href="#"><img src="img/index/html.png" alt="логотип HTML-академия"> </a>
-            <a href="#"><img src="img/index/borod.png" alt="логотип Бородинский"></a>
+            <a class="gluh" href="#"></a>
+            <a class="html" href="#"></a>
+            <a class="borod" href="#"></a>
         </div>
         <div class="guide">
             <div class="contacts">
@@ -144,16 +144,16 @@
                     <div class="name">
                         <label for="name-field">Ваше имя:</label>
                         <br>
-                        <input type="text" name="name" id="name-field" placeholder="представьтесь,  пожалуйста">
+                        <input type="text" name="name" id="name-field" class="name-field" placeholder="представьтесь,  пожалуйста">
                     </div>
                     <div class="email">
                         <label for="email-field">Ваш e-mail:</label>
                         <br>
-                        <input type="text" name="email" id="email-field" placeholder="для отправки ответа">
+                        <input type="text" name="email" id="email-field" class="email-field" placeholder="для отправки ответа">
                     </div>
                     <div class="infofmation">
-                        <label for="information">Текст письма:</label>
-                        <input type="text" name="infofmation" id="infofmation-field"  value="в свободной форме">
+                        <label for="infofmation">Текст письма:</label>
+                        <textarea name="infofmation" id="infofmation-field"  placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
                     </div>
                     <input class="submit" type="submit" value="отправить">
                     <div class="close"></div>

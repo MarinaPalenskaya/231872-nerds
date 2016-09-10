@@ -13,20 +13,20 @@
 				<div class="index-logo">
 					<img src="img/Index/logo.png" width="139" height="59" alt="логотип">
 				</div>
-				<div class="user-block">
-<!--					<img class="basket" src="img/index/basket.png"  width="15" height="15" alt="корзина">-->
-						<a class="basket" href="#">корзина</a>
-				</div>
+				<a  href="#" class="user-block">
+					<span class="icon-basket"></span>
+					<div class="basket">корзина</div>
+				</a>
 				<nav class="main-navigation">
 					<ul>
 						<li>
-							<a href="#">студия</a>
+							<a href="index.html">студия</a>
 						</li>
 						<li>
 							<a href="#">клиенты</a>
 						</li>
 						<li>
-							<a href="#">магазин</a>
+							<a class="active" href="/">магазин</a>
 						</li>
 						<li>
 							<a href="#">контакты</a>
@@ -43,8 +43,10 @@
 						<div class="val">
 							<h2>стоимость:</h2>
 							<div class="scroll-field">
-								<div class="rihg">
+								<div class="ring1 ">
 									<div class="green-line"></div>
+								</div>	
+								<div class="ring2">
 									<div class="gray-line"></div>
 								</div>
 							</div>
@@ -73,6 +75,9 @@
 							<div class="inp-box2">
 								<input id="features-selection" type="checkbox" name="features" checked>
 								<label for="features-selection"> Слайдер</label>
+								<span class="checkmark">
+								<div class="checkmark_stem"></div>
+								<div class="checkmark_kick"></div>
 							</div>
 							<div class="inp-box2">
 								<input id="features-selection2" type="checkbox" name="features">
@@ -111,8 +116,8 @@
 						</ul>
 					</div>
 					<div class="sorting-buttons">
-						<div class="button-down"></div>
-						<div class="button-up"></div>
+						<a class="button-down" href="#"></a>
+						<a class="button-up" href="#"></a>
 					</div>
 		 		</div>
 		 		<div class="portfolio">
@@ -122,7 +127,7 @@
 							<div class="dot"></div>
 							<div class="dot"></div>
 						</div>
-						<a href="#"><img src="img/Catalog/aviator.jpg" width="240" height="240" alt="aviator"></a>
+						<a href="#"><img src="img/catalog/aviator.jpg" width="240" height="240" alt="aviator"></a>
 						<div class="price">
 							<h4>aviator</h4>
 							<p>Одностраничный макет с авторским дизайном</p>
@@ -135,7 +140,7 @@
 							<div class="dot"></div>
 							<div class="dot"></div>
 						</div>
-		 				<a href="#"><img src="img/Catalog/sunset.jpg" width="240" height="240" alt="sunset"></a>
+		 				<a href="#"><img src="img/catalog/sunset.jpg" width="240" height="240" alt="sunset"></a>
 		 				<div class="price">
 							<h4>sunset</h4>
 							<p>Интернет-магазин с личным кабинетом</p>
@@ -148,7 +153,7 @@
 							<div class="dot"></div>
 							<div class="dot"></div>
 						</div>
-		 				<a href="#"><img src="img/Catalog/forte.jpg" width="240" height="240" alt="forte"></a>
+		 				<a href="#"><img src="img/catalog/forte.jpg" width="240" height="240" alt="forte"></a>
 		 				<div class="price">
 							<h4>forte</h4>
 							<p>Отличный макет для личного блога</p>
@@ -161,7 +166,7 @@
 							<div class="dot"></div>
 							<div class="dot"></div>
 						</div>
-		 				<a href="#"><img src="img/Catalog/marquee.jpg" width="240" height="240" alt="marquee"></a>
+		 				<a href="#"><img src="img/catalog/marquee.jpg" width="240" height="240" alt="marquee"></a>
 		 				<div class="price">
 							<h4>modern organic thai</h4>
 							<p>Сайт для ресторана быстрого питания</p>
@@ -174,10 +179,10 @@
 							<div class="dot"></div>
 							<div class="dot"></div>
 						</div>
-		 				<a href="#"><img src="img/Catalog/avenue.jpg" width="240" height="240" alt="avenue"></a>
+		 				<a href="#"><img src="img/catalog/avenue.jpg" width="240" height="240" alt="avenue"></a>
 		 				<div class="price">
 							<h4>avenue</h4>
-							<p>Макет для блога о путешествияхм</p>
+							<p>Макет для блога о путешествиях</p>
 							<button class="buy" type="submit">8000 Р.</button>
 						</div>
 		 			</div>
@@ -187,7 +192,7 @@
 							<div class="dot"></div>
 							<div class="dot"></div>
 						</div>
-		 				<a href="#"><img src="img/Catalog/dovetail.jpg" width="240" height="240" alt="dovetaitr"></a>
+		 				<a href="#"><img src="img/catalog/dovetail.jpg" width="240" height="240" alt="dovetaitr"></a>
 		 				<div class="price">
 							<h4>dovetail</h4>
 							<p>Интернет-магазин с галереей товаров</p>
@@ -215,24 +220,26 @@
 				<div class="pointer">
 					<img src="img/Index/pointer.png" width="230" height="190"  alt="указатель">
 				</div>
-				<form  action="#" method="post">
-					<div class="form"> 
-						<div class="name">
-							<label for="name-field">Ваше имя:</label><br>
-							<input type="text" name="name" id="name-field" value="представьтесь,  пожалуйста">
-						</div>
-						<div class="email">
-							<label for="email-field">Ваш e-mail:</label><br>
-							<input type="text" name="email" id="email-field" value="для отправки ответа">
-						</div>
-						<div class="infofmation">
-							<label for="infofmation-field">Текст письма:</label><br>
-							<input type="text" name="infofmation" id="infofmation-field"  value="в свободной форме">
-						</div>
-							<input class="submit" type="submit" value="отправить">
-                        	<div class="close"></div>
-	           		</div>
-				</form>
+				<form action="#" method="post">
+                	<div class="form">
+                    	<div class="name">
+                       	 	<label for="name-field">Ваше имя:</label>
+                       		 <br>
+                        	<input type="text" name="name" id="name-field" class="name-field" placeholder="представьтесь,  пожалуйста">
+                    	</div>
+                   		<div class="email">
+                        	<label for="email-field">Ваш e-mail:</label>
+                        	<br>
+                        	<input type="text" name="email" id="email-field" class="email-field" placeholder="для отправки ответа">
+                    	</div>
+                    	<div class="infofmation">
+                        	<label for="infofmation">Текст письма:</label>
+                        	<textarea name="infofmation" id="infofmation-field"  placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+                    	</div>
+                    	<input class="submit" type="submit" value="отправить">
+                   		 <div class="close"></div>
+                	</div>
+           		</form>
 			</div>	 
 		</main>
 		<footer>
